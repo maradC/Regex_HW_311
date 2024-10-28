@@ -119,13 +119,13 @@ public class HelloController {
                 DOB_PATTERN.matcher(dobField.getText()).matches() &&
                 ZIP_PATTERN.matcher(zipCodeField.getText()).matches();
 
-        addButton.setDisable(!allValid); // Enable the button only if all fields are valid
+        addButton.setDisable(!allValid);
     }
 
     @FXML
     private void addUser() {
-        // Clear validation messages and perform action to switch to a new UI
+
         validationMessage.setText("Registration successful!");
-        // Logic to load the new UI goes here
+
     }
 }
